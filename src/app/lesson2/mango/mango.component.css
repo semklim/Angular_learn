@@ -1,0 +1,4 @@
+img{
+	transition: 0.5s;
+	border-radius: var(--radius);
+}
