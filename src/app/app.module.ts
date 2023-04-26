@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { Task1Component } from './task1/task1.component';
-import { Task2Component } from './task2/task2.component';
-import { User } from './task3/task3.component';
+import { Task1Component } from './lesson1/task1/task1.component';
+import { Task2Component } from './lesson1/task2/task2.component';
+import { User } from './lesson1/task3/task3.component';
 
 @NgModule({
   declarations: [
