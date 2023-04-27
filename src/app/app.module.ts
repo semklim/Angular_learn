@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { MainComponent } from './main/main.component';
+import { AppComponent } from './main/app.component';
 // lesson1
 import { Task1Component } from './lesson1/task1/task1.component';
 import { Task2Component } from './lesson1/task2/task2.component';
@@ -15,7 +15,7 @@ import { ButtonClickerComponent } from './lesson2/button-clicker/button-clicker.
 import { MangoComponent } from './lesson2/mango/mango.component';
 @NgModule({
   declarations: [
-	MainComponent,
+	AppComponent,
 	//lesson1
     Task1Component,
 	Task2Component,
@@ -32,6 +32,6 @@ import { MangoComponent } from './lesson2/mango/mango.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [MainComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
