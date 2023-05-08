@@ -1,0 +1,26 @@
+<div class="wrap">
+  <div class="svgWork">
+    <div class="txtInfo">
+      <p>Вибери цвет круга</p>
+      <input type="color" name="head" id="head" [(ngModel)]="circleColor">
+    </div>
+    <svg [style.background]="bgColor" (contextmenu)="changeSvgBg($event)">
+      <circle [class.opacity]="opacity" (wheel)="resizeCircle($event)" (dblclick)="changeOpacity($event)" attr.transform="translate({{tCenter}},{{tCenter}})" [attr.cx]="r" [attr.cy]="r" [attr.r]="r" [attr.fill]="circleColor" />
+    </svg>
+  </div>
+    <div class="infoAbout">
+      <p>Что можно делать:</p>
+      <ul class="infoHowUse">
+        <li>Вращение колесика мышки на круге - круг увеличивается или уменьшается;</li>
+        <li>По двойному клику на круг - он станет полупрозрачным/видимым;</li>
+        <li>По клику правой клавишей мыши на полотно - цвет фона рандомно меняется;</li>
+      </ul>
+      <p>Статистика</p>
+      <ul>
+        <li>цвет заливки полотна <b [style.color]="bgColor">{{bgColor}}</b></li>
+        <li>Состояние прозрачности круга {{opacity}}</li>
+        <li>Кол-во изменений цвета заливки {{countBgChange}}</li>
+        <li>кол-во изменений розрачности круга {{countOpacityChange}}</li>
+      </ul>
+    </div>
+</div>

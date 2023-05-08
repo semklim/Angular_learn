@@ -1,0 +1,8 @@
+.task0{
+background-color: coral;
+}
+
+p{
+  cursor: pointer;
+user-select: none;
+}
