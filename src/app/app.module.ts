@@ -16,6 +16,9 @@ import { MangoComponent } from './lesson2/mango/mango.component';
 import { SvgComponent } from './lesson3/svg/svg.component';
 import { Task0Component } from './lesson3/task0/task0.component';
 import { FormsModule } from '@angular/forms';
+import { UserComponent } from './lesson4/user/user.component';
+import { AvatarComponent } from './lesson4/user/avatar/avatar.component';
+import { AvatarSettingsComponent } from './lesson4/user/avatar-settings/avatar-settings.component';
 @NgModule({
   declarations: [
 	AppComponent,
@@ -32,6 +35,9 @@ import { FormsModule } from '@angular/forms';
   //lesson 3
  SvgComponent,
  Task0Component,
+ UserComponent,
+ AvatarComponent,
+ AvatarSettingsComponent,
   ],
   imports: [
     BrowserModule,
