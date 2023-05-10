@@ -1,1 +1,6 @@
-<p>user works!</p>
+<p>Width {{AvatarWidth}}</p>
+<p>Height {{AvatarHeight}}</p>
+<app-avatar [imgWidth]="AvatarWidth" [imgHeight]="AvatarHeight" [imgSrc]="AvatarSrc"></app-avatar>
+
+<app-avatar-settings [(imgWidth)]="AvatarWidth" [(imgHeight)]="AvatarHeight"></app-avatar-settings>
+
