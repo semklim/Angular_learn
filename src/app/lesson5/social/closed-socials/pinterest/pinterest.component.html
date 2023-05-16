@@ -1,0 +1,9 @@
+<img 
+[ngStyle]="imgStyle"
+[ngClass]="{ greyImg: count % 2 !== 0}"
+src="https://upload.wikimedia.org/wikipedia/commons/3/35/Pinterest_Logo.svg" alt="" 
+(click)="count = count + 1"
+>
+
+<span>{{count}}</span>
+

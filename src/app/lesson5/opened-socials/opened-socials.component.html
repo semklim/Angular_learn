@@ -1,0 +1,10 @@
+<div class="wrap">
+  <h1>openedSocials</h1>
+  <div class="components">
+    <app-linked-in [imgStyle]="linkedInStyle" #linked (click)="onImgClick(linked)"></app-linked-in>
+    <app-twitter [imgStyle]="twitterStyle" #twitter (click)="onImgClick(twitter)"></app-twitter>
+  </div>
+</div>
+<div class="totalCount">
+{{totalCount}}
+</div>

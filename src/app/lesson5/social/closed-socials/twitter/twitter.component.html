@@ -1,0 +1,8 @@
+<img 
+[ngStyle]="imgStyle"
+[ngClass]="{ greyImg: count % 2 !== 0}"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="" 
+(click)="count = count + 1"
+>
+
+<span>{{count}}</span>

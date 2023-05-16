@@ -16,14 +16,19 @@ import { MangoComponent } from './lesson2/mango/mango.component';
 import { SvgComponent } from './lesson3/svg/svg.component';
 import { Task0Component } from './lesson3/task0/task0.component';
 import { FormsModule } from '@angular/forms';
+// lesson3
 import { UserComponent } from './lesson4/user/user.component';
 import { AvatarComponent } from './lesson4/user/avatar/avatar.component';
 import { AvatarSettingsComponent } from './lesson4/user/avatar-settings/avatar-settings.component';
+// lesson4
+import { OpenedSocialsComponent } from './lesson5/opened-socials/opened-socials.component';
+import { SocialModule } from './lesson5/social/social.module';
+
 @NgModule({
   declarations: [
 	AppComponent,
 	//lesson1
-    Task1Component,
+  Task1Component,
 	Task2Component,
 	User,
 	//lesson2
@@ -33,16 +38,20 @@ import { AvatarSettingsComponent } from './lesson4/user/avatar-settings/avatar-s
 	ButtonClickerComponent,
 	MangoComponent,
   //lesson 3
- SvgComponent,
- Task0Component,
- UserComponent,
- AvatarComponent,
- AvatarSettingsComponent,
+  SvgComponent,
+  Task0Component,
+  UserComponent,
+  AvatarComponent,
+  AvatarSettingsComponent,
+  // lesson 4
+  OpenedSocialsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+  //  lesson 4
+    SocialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
