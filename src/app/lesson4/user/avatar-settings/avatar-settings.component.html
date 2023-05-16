@@ -3,12 +3,22 @@ Width
   <div class="range-value" #rangeWidthVal [ngStyle]="{'left': 'calc(30% + 4px)'}">
     <span>{{imgWidth}}</span>
   </div>
-  <input type="range" name="width" id="width" min="0" max="1000" step="50" #width [(ngModel)]="imgWidth" (input)="onChangeWidth(width, rangeWidthVal)">
+  <input type="range" name="width" id="width" min="0" max="1000" step="50" 
+  #width 
+  [(ngModel)]="imgWidth" 
+  (input)="onChangeWidth(width, rangeWidthVal)"
+  (mouseup)="refreshInputPosition(width, rangeWidthVal)"
+  >
 </div>
 Height
 <div class="range-wrap">
   <div class="range-value" #rangeHeightVal [ngStyle]="{'left': 'calc(30% + 4px)'}">
     <span>{{imgHeight}}</span>
   </div>
-  <input type="range" name="height" id="height" min="0" max="1000" step="50" #height [(ngModel)]="imgHeight" (input)="onChangeHeight(height, rangeHeightVal)">
+  <input type="range" name="height" id="height" min="0" max="1000" step="50" 
+  #height 
+  [(ngModel)]="imgHeight" 
+  (input)="onChangeHeight(height, rangeHeightVal)"
+  (mouseup)="refreshInputPosition(height, rangeHeightVal)"
+  >
 </div>

@@ -15,7 +15,7 @@ export class UserComponent {
   set AvatarWidth(value: number){
     this.refreshWinSize();
     const percent = this.percentage(value, this.screenWidth);
-    if(percent > 75){
+    if(percent >= 75){
       // this.AvatarWidth = Math.round(this.screenWidth * 0.75);
     }else{
       this._AvatarWidth = value;
@@ -24,7 +24,7 @@ export class UserComponent {
   set AvatarHeight(value: number){
     this.refreshWinSize();
     const percent = this.percentage(value, this.screenHeight);
-    if(percent > 75){
+    if(percent >= 75){
       // this.AvatarHeight = Math.round(this.screenHeight * 0.75);
     }else{
       this._AvatarHeight = value;
