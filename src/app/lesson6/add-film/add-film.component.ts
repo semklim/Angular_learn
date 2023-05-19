@@ -18,8 +18,8 @@ export class AddFilmComponent {
   createForm() {
     this.movieForm = this.formBuilder.group({
       title: ['', Validators.required],
-      genre: ['', Validators.required],
-      releaseDate: ['', Validators.required],
+      genre: [''],
+      releaseDate: [''],
       image: ['', [Validators.required, Validators.pattern(this.URL_REGEXP)]]
     });
   }
