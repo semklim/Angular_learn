@@ -23,6 +23,7 @@ import { AvatarSettingsComponent } from './lesson4/user/avatar-settings/avatar-s
 // lesson4
 import { OpenedSocialsComponent } from './lesson5/opened-socials/opened-socials.component';
 import { SocialModule } from './lesson5/social/social.module';
+import { Lesson6Component } from './lesson6/lesson6.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { SocialModule } from './lesson5/social/social.module';
   AvatarSettingsComponent,
   // // lesson 4
   OpenedSocialsComponent,
+  Lesson6Component,
   ],
   imports: [
     BrowserModule,
