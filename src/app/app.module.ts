@@ -43,7 +43,7 @@ import { SocialModule } from './lesson5/social/social.module';
   UserComponent,
   AvatarComponent,
   AvatarSettingsComponent,
-  // lesson 4
+  // // lesson 4
   OpenedSocialsComponent,
   ],
   imports: [
