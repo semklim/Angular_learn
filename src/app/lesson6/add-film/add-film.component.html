@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="form-wrapper">
+    <form [formGroup]="movieForm" (ngSubmit)="onSubmit()" class="movie-form">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" formControlName="title" class="form-control">
+        <div *ngIf="movieForm.get('title')!.invalid && movieForm.get('title')!.touched" class="invalid-feedback">
+          Title is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" formControlName="genre" class="form-control">
+        <div *ngIf="movieForm.get('genre')!.invalid && movieForm.get('genre')!.touched" class="invalid-feedback">
+          Genre is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="releaseDate">Release Date:</label>
+        <input type="date" id="releaseDate" formControlName="releaseDate" class="form-control">
+        <div *ngIf="movieForm.get('releaseDate')!.invalid && movieForm.get('releaseDate')!.touched" class="invalid-feedback">
+          Release Date is required and should be a four-digit number.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="image">Poster url:</label>
+        <input type="text" id="image" formControlName="image" class="form-control">
+        <div *ngIf="movieForm.get('image')!.invalid && movieForm.get('image')!.dirty && movieForm.get('image')?.value.length > 0" class="invalid-feedback">
+          poster url is not valid.
+        </div>
+        <div *ngIf="movieForm.get('image')!.invalid && movieForm.get('image')!.touched && movieForm.get('image')?.value.length === 0" class="invalid-feedback">
+          poster url is required.
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary submitBtn" [disabled]="movieForm.invalid">Add Movie</button>
+    </form>
+  </div>
+</div>
