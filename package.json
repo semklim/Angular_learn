@@ -18,8 +18,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,css}": "prettier --write",
-    "*.{js,ts}": "eslint --fix"
+    "src/**/*.{js,ts,css}": "prettier --write",
+    "src/**/*.{js,ts}": "eslint --fix"
   },
   "private": true,
   "dependencies": {

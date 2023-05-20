@@ -1,13 +1,15 @@
-  <div class="films" *ngFor="let film of filmsData.films">
-    <img [src]="film.image" height="300" alt="{{ film.title }}" />
-    <h2>{{ film.title }}</h2>
-    <p>{{ film.description }}</p>
-    <p>IMDb Rating: {{ film.imdb_rating }}</p>
-    <p>Actors: {{ film.actors.join(', ') }}</p>
-    <p>Release Date: {{ film.release_date }}</p>
-    <p>Genre: {{ film.genre.join(', ') }}</p>
-    <p>Director: {{ film.director }}</p>
-    <p>Duration:  {{ msToTime(film.duration_ms) }}h</p>
-    <p>Language: {{ film.language }}</p>
-    <p>Country: {{ film.country }}</p>
+  <div class="wrap">
+    <div class="films" *ngFor="let film of filmsData.films">
+      <img [src]="film.image" height="300" alt="{{ film.title }}" />
+      <h2>{{ film.title }}</h2>
+      <p class="description">{{ film.description }}</p>
+      <p>IMDb Rating: {{ film.imdb_rating }}</p>
+      <p>Actors: {{ film.actors.join(', ') }}</p>
+      <p>Release Date: {{ film.release_date }}</p>
+      <p>Genre: {{ film.genre.join(', ') }}</p>
+      <p>Director: {{ film.director }}</p>
+      <p>Duration:  {{ msToTime(film.duration_ms) }}h</p>
+      <p>Language: {{ film.language }}</p>
+      <p>Country: {{ film.country }}</p>
+    </div>
   </div>
