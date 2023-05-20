@@ -8,9 +8,9 @@ describe('ButtonClickerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ButtonClickerComponent ]
+      declarations: [ButtonClickerComponent],
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ButtonClickerComponent);
     component = fixture.componentInstance;

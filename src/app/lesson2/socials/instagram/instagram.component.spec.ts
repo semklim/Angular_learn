@@ -8,9 +8,9 @@ describe('InstagramComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InstagramComponent ]
+      declarations: [InstagramComponent],
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(InstagramComponent);
     component = fixture.componentInstance;

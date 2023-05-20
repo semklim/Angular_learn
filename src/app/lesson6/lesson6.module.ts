@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Lesson6Component } from './lesson6.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Lesson6Component } from './lesson6.component';
 import { AddFilmComponent } from './add-film/add-film.component';
-
-
 
 @NgModule({
   declarations: [
@@ -14,9 +12,9 @@ import { AddFilmComponent } from './add-film/add-film.component';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
-  exports: [Lesson6Component]
+  exports: [Lesson6Component],
 })
 export class Lesson6Module { }

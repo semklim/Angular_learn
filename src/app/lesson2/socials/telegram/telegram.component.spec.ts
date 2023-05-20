@@ -8,9 +8,9 @@ describe('TelegramComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TelegramComponent ]
+      declarations: [TelegramComponent],
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(TelegramComponent);
     component = fixture.componentInstance;
