@@ -11,6 +11,16 @@
     "prettier:fix:all": "prettier --write .",
     "lint:fix": "ng lint --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --relative"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+       "eslint --fix"
+    ]
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",
@@ -43,12 +53,14 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "lint-staged": "^13.2.2",
     "prettier": "2.8.8",
     "typescript": "~4.9.4"
   }
