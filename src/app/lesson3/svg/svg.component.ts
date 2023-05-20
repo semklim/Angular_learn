@@ -20,7 +20,7 @@ export class SvgComponent {
 
   countOpacityChange = 0;
 
-  randomHsl = () : string => `hsla(${Math.floor(Math.random() * 360)}, 80%, 30%)`;
+  randomHsl = (): string => `hsla(${Math.floor(Math.random() * 360)}, 80%, 30%)`;
 
   resizeCircle(event: WheelEvent): void {
     event.preventDefault();

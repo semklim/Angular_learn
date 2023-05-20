@@ -1,8 +1,8 @@
-.task0{
-background-color: coral;
+.task0 {
+  background-color: coral;
 }
 
-p{
+p {
   cursor: pointer;
-user-select: none;
+  user-select: none;
 }

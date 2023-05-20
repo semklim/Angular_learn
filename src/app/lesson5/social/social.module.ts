@@ -6,19 +6,8 @@ import { LinkedInComponent } from './closed-socials/linked-in/linked-in.componen
 import { PinterestComponent } from './closed-socials/pinterest/pinterest.component';
 
 @NgModule({
-  declarations: [
-    ClosedSocialsComponent,
-    TwitterComponent,
-    LinkedInComponent,
-    PinterestComponent,
-  ],
-  imports: [
-    BrowserModule,
-  ],
-  exports: [
-    ClosedSocialsComponent,
-    TwitterComponent,
-    LinkedInComponent,
-  ],
+  declarations: [ClosedSocialsComponent, TwitterComponent, LinkedInComponent, PinterestComponent],
+  imports: [BrowserModule],
+  exports: [ClosedSocialsComponent, TwitterComponent, LinkedInComponent],
 })
-export class SocialModule { }
+export class SocialModule {}

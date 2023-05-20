@@ -1,4 +1,4 @@
-:host{
+:host {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -9,11 +9,9 @@
   background-color: aqua;
 }
 
-
-
-app-avatar-settings{
+app-avatar-settings {
   margin-top: auto;
 }
-app-avatar{
+app-avatar {
   margin-top: auto;
 }

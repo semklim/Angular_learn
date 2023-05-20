@@ -58,4 +58,4 @@ import { Lesson6Module } from './lesson6/lesson6.module';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

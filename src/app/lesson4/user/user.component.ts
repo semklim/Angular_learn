@@ -44,10 +44,7 @@ export class UserComponent {
     return this.imgHeight;
   }
 
-  percentage = (
-    partialValue: number,
-    totalValue: number,
-  ): number => (100 * partialValue) / totalValue;
+  percentage = (partialValue: number, totalValue: number): number => (100 * partialValue) / totalValue;
 
   refreshWinSize() {
     this.screenWidth = window.innerWidth;

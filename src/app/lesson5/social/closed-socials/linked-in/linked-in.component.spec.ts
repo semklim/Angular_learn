@@ -9,8 +9,7 @@ describe('LinkedInComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [LinkedInComponent],
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(LinkedInComponent);
     component = fixture.componentInstance;

@@ -9,8 +9,7 @@ describe('TwitterComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [TwitterComponent],
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TwitterComponent);
     component = fixture.componentInstance;

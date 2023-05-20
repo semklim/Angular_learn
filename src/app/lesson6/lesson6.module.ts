@@ -5,16 +5,9 @@ import { Lesson6Component } from './lesson6.component';
 import { AddFilmComponent } from './add-film/add-film.component';
 
 @NgModule({
-  declarations: [
-    Lesson6Component,
-    AddFilmComponent,
-  ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-  ],
+  declarations: [Lesson6Component, AddFilmComponent],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   providers: [],
   exports: [Lesson6Component],
 })
-export class Lesson6Module { }
+export class Lesson6Module {}

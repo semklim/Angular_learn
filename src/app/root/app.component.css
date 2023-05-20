@@ -1,4 +1,4 @@
-.lesson5{
+.lesson5 {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -6,16 +6,18 @@
   align-items: center;
 }
 
-app-opened-socials, app-closed-socials{
+app-opened-socials,
+app-closed-socials {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-app-closed-socials > h1, app-opened-socials > h1{
+app-closed-socials > h1,
+app-opened-socials > h1 {
   margin-bottom: 50px;
 }
 
-.openedSocials{
+.openedSocials {
   padding: 20px;
   border: 2px solid black;
 }

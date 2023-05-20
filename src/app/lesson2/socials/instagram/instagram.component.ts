@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './instagram.component.html',
   styleUrls: ['./instagram.component.css'],
 })
-export class InstagramComponent {
-
-}
+export class InstagramComponent {}

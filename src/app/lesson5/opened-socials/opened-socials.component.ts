@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { imgSize } from '../social/closed-socials/closed-socials.component';
+import { ImgSize } from '../social/closed-socials/closed-socials.component';
 import { LinkedInComponent } from '../social/closed-socials/linked-in/linked-in.component';
 import { TwitterComponent } from '../social/closed-socials/twitter/twitter.component';
 
@@ -20,17 +20,17 @@ export class OpenedSocialsComponent {
 
   totalCount = 0;
 
-  twitterStyle: imgSize = {
+  twitterStyle: ImgSize = {
     width: 50,
     height: 50,
   };
 
-  linkedInStyle: imgSize = {
+  linkedInStyle: ImgSize = {
     width: 50,
     height: 50,
   };
 
-  onImgClick: OverloadMeth = (el) => {
+  onImgClick: OverloadMeth = el => {
     const name = el.styleName;
     this[name].width += 1;
     this[name].height += 1;

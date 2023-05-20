@@ -5,12 +5,8 @@ import { User } from './task3.component';
 describe('User', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-      ],
-      declarations: [
-        User,
-      ],
+      imports: [RouterTestingModule],
+      declarations: [User],
     }).compileComponents();
   });
 
@@ -20,7 +16,7 @@ describe('User', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should have as title \'AngularLesson\'', () => {
+  it("should have as title 'AngularLesson'", () => {
     const fixture = TestBed.createComponent(User);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('AngularLesson');

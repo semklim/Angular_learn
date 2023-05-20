@@ -1,9 +1,9 @@
-.wrap{
+.wrap {
   padding: 20px;
   border: 2px solid black;
 }
 
-.components{
+.components {
   width: 100%;
   display: flex;
   justify-content: space-evenly;

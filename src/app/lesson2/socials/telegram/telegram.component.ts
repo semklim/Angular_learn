@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './telegram.component.html',
   styleUrls: ['./telegram.component.css'],
 })
-export class TelegramComponent {
-
-}
+export class TelegramComponent {}

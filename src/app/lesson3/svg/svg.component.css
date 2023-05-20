@@ -1,4 +1,4 @@
-:host{
+:host {
   display: block;
   width: 100%;
   font-size: 20px;
@@ -6,14 +6,13 @@
   background-color: rgb(188, 60, 60);
 }
 
-svg{
-
+svg {
   border-radius: 50px;
   width: 500px;
   height: 500px;
 }
 
-.wrap{
+.wrap {
   height: 800px;
   background-color: bisque;
   width: 1000px;
@@ -22,14 +21,14 @@ svg{
   align-items: flex-end;
 }
 
-.svgWork{
+.svgWork {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.txtInfo{
+.txtInfo {
   box-sizing: border-box;
   padding: 0 50px;
   width: 100%;
@@ -39,7 +38,7 @@ svg{
   gap: 20px;
 }
 
-.infoAbout{
+.infoAbout {
   user-select: none;
   width: 100%;
   display: flex;
@@ -48,10 +47,10 @@ svg{
   align-items: center;
 }
 
-.infoHowUse{
+.infoHowUse {
   width: 450px;
 }
-input{
+input {
   width: 50px;
   height: 50px;
   border-width: 0;
@@ -62,14 +61,14 @@ input{
   outline: none;
 }
 
-input:focus-visible{
+input:focus-visible {
   outline: -webkit-focus-ring-color bisque 0px;
 }
 
-.opacity{
+.opacity {
   opacity: 0.5;
 }
 
-ul{
+ul {
   user-select: none;
 }

@@ -9,8 +9,7 @@ describe('ClosedSocialsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ClosedSocialsComponent],
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ClosedSocialsComponent);
     component = fixture.componentInstance;

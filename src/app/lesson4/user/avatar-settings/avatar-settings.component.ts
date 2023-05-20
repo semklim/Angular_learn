@@ -1,6 +1,4 @@
-import {
-  Component, EventEmitter, Input, Output,
-} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-avatar-settings',
@@ -22,11 +20,11 @@ export class AvatarSettingsComponent {
   };
 
   refreshInputPosition(el: HTMLInputElement, valueDisplay: HTMLDivElement) {
-    if ((this.imgWidth > this.dataFromUser.AvatarWidth)) {
+    if (this.imgWidth > this.dataFromUser.AvatarWidth) {
       this.imgWidth = this.dataFromUser.AvatarWidth;
       this.setValue(el, valueDisplay, this.imgWidth);
     }
-    if ((this.imgHeight > this.dataFromUser.AvatarHeight)) {
+    if (this.imgHeight > this.dataFromUser.AvatarHeight) {
       this.imgHeight = this.dataFromUser.AvatarHeight;
       this.setValue(el, valueDisplay, this.imgHeight);
     }
@@ -43,10 +41,9 @@ export class AvatarSettingsComponent {
   }
 
   setValue = (range: HTMLInputElement, rangeV: HTMLDivElement, correctData?: number) => {
-    const rangeValue = (correctData || range.value);
-    const
-      newValue = (Number((+rangeValue - +range.min) * 100) / (+range.max - +range.min));
-    const newPosition = 10 - (newValue * 0.2);
+    const rangeValue = correctData || range.value;
+    const newValue = Number((+rangeValue - +range.min) * 100) / (+range.max - +range.min);
+    const newPosition = 10 - newValue * 0.2;
     if (rangeV.firstElementChild) {
       rangeV.firstElementChild.textContent = `${rangeValue}`;
     }

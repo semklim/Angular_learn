@@ -1,23 +1,23 @@
-.userData{
-	display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100px;
+.userData {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100px;
 }
 
-.user{
-	align-self: center;
-	text-align: center;
+.user {
+  align-self: center;
+  text-align: center;
 }
 
 .userData > * {
-	box-sizing: border-box;
-    margin: 5px 0px;
-    background: #444;
-    color: white;
-    border-radius: 3px;
-    width: 100%;
-    padding: 6px;
+  box-sizing: border-box;
+  margin: 5px 0px;
+  background: #444;
+  color: white;
+  border-radius: 3px;
+  width: 100%;
+  padding: 6px;
 }

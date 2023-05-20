@@ -9,7 +9,6 @@ export type ImgSize = {
   selector: 'app-closed-socials',
   templateUrl: './closed-socials.component.html',
   styleUrls: ['./closed-socials.component.css'],
-
 })
 export class ClosedSocialsComponent {
   pinterestStyle: ImgSize = {

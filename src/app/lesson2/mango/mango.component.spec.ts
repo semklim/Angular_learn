@@ -9,8 +9,7 @@ describe('MangoComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MangoComponent],
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(MangoComponent);
     component = fixture.componentInstance;

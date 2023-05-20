@@ -9,8 +9,7 @@ describe('PinterestComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [PinterestComponent],
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PinterestComponent);
     component = fixture.componentInstance;

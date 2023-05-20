@@ -24,7 +24,8 @@ export class FilmsDataService {
       {
         id: 'e9d0a5b84a13c681',
         title: 'The Shawshank Redemption',
-        description: 'Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.',
+        description:
+          'Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.',
         imdb_rating: 9.3,
         actors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
         release_date: '1994-09-23',
@@ -38,7 +39,8 @@ export class FilmsDataService {
       {
         id: '0c6ed3f0e72eac95',
         title: 'Pulp Fiction',
-        description: "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        description:
+          "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
         imdb_rating: 8.9,
         actors: ['John Travolta', 'Samuel L. Jackson', 'Uma Thurman'],
         release_date: '1994-10-14',
@@ -52,7 +54,8 @@ export class FilmsDataService {
       {
         id: '7b9f8a2f9c03e60c',
         title: 'The Dark Knight',
-        description: 'Batman sets out to dismantle the remaining criminal organizations that plague Gotham City, but faces a new threat in the form of the Joker.',
+        description:
+          'Batman sets out to dismantle the remaining criminal organizations that plague Gotham City, but faces a new threat in the form of the Joker.',
         imdb_rating: 9.0,
         actors: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart'],
         release_date: '2008-07-18',
@@ -66,7 +69,8 @@ export class FilmsDataService {
       {
         id: 'a3e5b870d2936b3f',
         title: 'Fight Club',
-        description: 'An insomniac office worker and a soap salesman form an underground fight club that evolves into something much more dangerous.',
+        description:
+          'An insomniac office worker and a soap salesman form an underground fight club that evolves into something much more dangerous.',
         imdb_rating: 8.8,
         actors: ['Brad Pitt', 'Edward Norton', 'Helena Bonham Carter'],
         release_date: '1999-10-15',
@@ -84,7 +88,7 @@ export class FilmsDataService {
     return this.dataBase;
   }
 
-  set add(obj:Film) {
+  set add(obj: Film) {
     this.dataBase.films.push(obj);
   }
 
