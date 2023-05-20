@@ -1,16 +1,16 @@
 export type Film = {
-  id?: string;
+  id: string;
   title: string;
-  description?: string;
-  imdb_rating?: number;
-  actors?: string[];
-  release_date?: string;
+  description: string;
+  imdb_rating: number;
+  actors: string[];
+  release_date: string;
   image: string;
-  genre?: string[];
-  director?: string;
-  duration_ms?: number;
-  language?: string;
-  country?: string;
+  genre: string[];
+  director: string;
+  duration_ms: number;
+  language: string;
+  country: string;
 };
 
 export type FilmsResponse = {

@@ -14,7 +14,8 @@ export class FilmsDataService {
         imdb_rating: 8.8,
         actors: ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Ellen Page'],
         release_date: '2010-07-16',
-        image: 'https://pics.filmaffinity.com/inception-652954101-large.jpg',
+        image:
+          'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UY1037_.jpg',
         genre: ['Action', 'Adventure', 'Sci-Fi'],
         director: 'Christopher Nolan',
         duration_ms: 8880000,
@@ -29,7 +30,7 @@ export class FilmsDataService {
         imdb_rating: 9.3,
         actors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
         release_date: '1994-09-23',
-        image: 'https://pics.filmaffinity.com/the_shawshank_redemption-576140557-large.jpg',
+        image: `https://m.media-amazon.com/images/M/MV5BOWExMGY4MzEtZjIzOS00ZTNkLTliOTUtYzkyNTJlZDcwN2Y3XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg`,
         genre: ['Drama'],
         director: 'Frank Darabont',
         duration_ms: 8520000,
@@ -44,7 +45,7 @@ export class FilmsDataService {
         imdb_rating: 8.9,
         actors: ['John Travolta', 'Samuel L. Jackson', 'Uma Thurman'],
         release_date: '1994-10-14',
-        image: 'https://pics.filmaffinity.com/pulp_fiction-210382116-large.jpg',
+        image: `https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1055_.jpg`,
         genre: ['Crime', 'Drama'],
         director: 'Quentin Tarantino',
         duration_ms: 9240000,
@@ -59,7 +60,7 @@ export class FilmsDataService {
         imdb_rating: 9.0,
         actors: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart'],
         release_date: '2008-07-18',
-        image: 'https://pics.filmaffinity.com/the_dark_knight-102763119-large.jpg',
+        image: `https://m.media-amazon.com/images/M/MV5BMTIzMDc4MzA2Ml5BMl5BanBnXkFtZTcwODU0MzA3MQ@@._V1_FMjpg_UX510_.jpg`,
         genre: ['Action', 'Crime', 'Drama'],
         director: 'Christopher Nolan',
         duration_ms: 9120000,
@@ -74,7 +75,8 @@ export class FilmsDataService {
         imdb_rating: 8.8,
         actors: ['Brad Pitt', 'Edward Norton', 'Helena Bonham Carter'],
         release_date: '1999-10-15',
-        image: 'https://pics.filmaffinity.com/Fight_Club-320750671-large.jpg',
+        image:
+          'https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_FMjpg_UY720_.jpg',
         genre: ['Drama'],
         director: 'David Fincher',
         duration_ms: 8340000,
@@ -84,8 +86,8 @@ export class FilmsDataService {
     ],
   };
 
-  get get(): FilmsResponse {
-    return this.dataBase;
+  get films(): Film[] {
+    return this.dataBase.films;
   }
 
   set add(obj: Film) {

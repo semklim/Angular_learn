@@ -7,4 +7,6 @@ import { FilmsDataService } from '../films/films-data.service';
   styleUrls: ['./films-section.component.css'],
   providers: [FilmsDataService],
 })
-export class FilmsSectionComponent {}
+export class FilmsSectionComponent {
+  constructor(public filmsData: FilmsDataService) {}
+}

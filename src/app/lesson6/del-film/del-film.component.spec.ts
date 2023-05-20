@@ -8,9 +8,8 @@ describe('DelFilmComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DelFilmComponent ]
-    })
-    .compileComponents();
+      declarations: [DelFilmComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(DelFilmComponent);
     component = fixture.componentInstance;
