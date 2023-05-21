@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FilmsDataService } from '../films/films-data.service';
 
 @Component({
   selector: 'app-add-film',
@@ -11,7 +12,7 @@ export class AddFilmComponent implements OnInit {
 
   URL_REGEXP = /^[A-Za-z][A-Za-z\d.+-]*:\/*(?:\w+(?::\w+)?@)?[^\s/]+(?::\d+)?(?:\/[\w#!:.?+=&%@\-/]*)?$/;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private filmsData: FilmsDataService) {}
 
   ngOnInit() {
     this.createForm();
@@ -30,9 +31,26 @@ export class AddFilmComponent implements OnInit {
     if (this.movieForm.invalid) {
       return;
     }
+    if (this.movieForm.value.genre) {
+      this.movieForm.value.genre = this.movieForm.value.genre.split(', ');
+    } else {
+      this.movieForm.value.genre = [' '];
+    }
+    const movieData = {
+      ...this.movieForm.value,
+      id: '',
+      description: '',
+      imdb_rating: 0,
+      actors: [''],
+      release_date: '',
+      director: '',
+      duration_ms: 0,
+      language: '',
+      country: '',
+    };
 
-    const movieData = this.movieForm.value;
     console.log(movieData);
+    this.filmsData.add = movieData;
     this.movieForm.reset();
   }
 }

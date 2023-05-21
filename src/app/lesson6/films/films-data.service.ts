@@ -5,7 +5,7 @@ import { Film, FilmsResponse } from 'src/app/types/films/films.type';
   providedIn: 'root',
 })
 export class FilmsDataService {
-  private dataBase: FilmsResponse = {
+  dataBase: FilmsResponse = {
     films: [
       {
         id: 'f1a84b06f8f93f2b',
@@ -52,37 +52,6 @@ export class FilmsDataService {
         language: 'English',
         country: 'United States',
       },
-      {
-        id: '7b9f8a2f9c03e60c',
-        title: 'The Dark Knight',
-        description:
-          'Batman sets out to dismantle the remaining criminal organizations that plague Gotham City, but faces a new threat in the form of the Joker.',
-        imdb_rating: 9.0,
-        actors: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart'],
-        release_date: '2008-07-18',
-        image: `https://m.media-amazon.com/images/M/MV5BMTIzMDc4MzA2Ml5BMl5BanBnXkFtZTcwODU0MzA3MQ@@._V1_FMjpg_UX510_.jpg`,
-        genre: ['Action', 'Crime', 'Drama'],
-        director: 'Christopher Nolan',
-        duration_ms: 9120000,
-        language: 'English',
-        country: 'United States',
-      },
-      {
-        id: 'a3e5b870d2936b3f',
-        title: 'Fight Club',
-        description:
-          'An insomniac office worker and a soap salesman form an underground fight club that evolves into something much more dangerous.',
-        imdb_rating: 8.8,
-        actors: ['Brad Pitt', 'Edward Norton', 'Helena Bonham Carter'],
-        release_date: '1999-10-15',
-        image:
-          'https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_FMjpg_UY720_.jpg',
-        genre: ['Drama'],
-        director: 'David Fincher',
-        duration_ms: 8340000,
-        language: 'English',
-        country: 'United States',
-      },
     ],
   };
 
@@ -92,6 +61,7 @@ export class FilmsDataService {
 
   set add(obj: Film) {
     this.dataBase.films.push(obj);
+    console.log(this.dataBase.films);
   }
 
   remove(id: string) {

@@ -30,13 +30,18 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  min-width: 300px;
+  max-width: 300px;
   border: 1px solid black;
 }
 .films > p,
 h2 {
   width: 100%;
   margin: 3px 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .description {

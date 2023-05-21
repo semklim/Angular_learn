@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { Film } from 'src/app/types/films/films.type';
+import { Component } from '@angular/core';
 import { FilmsDataService } from '../films/films-data.service';
 
 @Component({
@@ -8,21 +7,6 @@ import { FilmsDataService } from '../films/films-data.service';
   styleUrls: ['./films-list.component.css'],
 })
 export class FilmsListComponent {
-  @Input() film: Film = {
-    id: '',
-    title: '',
-    description: '',
-    imdb_rating: 8.8,
-    actors: [''],
-    release_date: '',
-    image: '',
-    genre: [''],
-    director: '',
-    duration_ms: 8880000,
-    language: '',
-    country: '',
-  };
-
   constructor(public filmsData: FilmsDataService) {}
 
   msToTime(duration: number): string {
