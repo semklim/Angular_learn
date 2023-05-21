@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { Lesson6Component } from './lesson6.component';
 import { AddFilmComponent } from './add-film/add-film.component';
 import { DelFilmComponent } from './del-film/del-film.component';
-import { FilmsListComponent } from './films-list/films-list.component';
+import { FilmComponent } from './film/film.component';
 import { FilmsSectionComponent } from './films-section/films-section.component';
 
 @NgModule({
-  declarations: [Lesson6Component, AddFilmComponent, DelFilmComponent, FilmsListComponent, FilmsSectionComponent],
+  declarations: [AddFilmComponent, DelFilmComponent, FilmComponent, FilmsSectionComponent],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   providers: [],
-  exports: [Lesson6Component],
+  exports: [FilmsSectionComponent],
 })
 export class Lesson6Module {}

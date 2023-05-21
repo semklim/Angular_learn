@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
-import { FilmsDataService } from '../films/films-data.service';
+import { Component, Input } from '@angular/core';
+import { Film } from 'src/app/types/films/films.type';
 
 @Component({
-  selector: 'app-films-list',
-  templateUrl: './films-list.component.html',
-  styleUrls: ['./films-list.component.css'],
+  selector: 'app-film',
+  templateUrl: './film.component.html',
+  styleUrls: ['./film.component.css'],
 })
-export class FilmsListComponent {
-  constructor(public filmsData: FilmsDataService) {}
+export class FilmComponent {
+  @Input() film!: Film;
+
+  @Input() hide!: boolean;
 
   msToTime(duration: number): string {
     let minutes = Math.floor((duration / (1000 * 60)) % 60);

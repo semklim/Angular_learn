@@ -1,9 +1,9 @@
   <div class="wrap">
-    <div class="films" *ngFor="let film of filmsData.films">
+    <div class="films">
       <div class="picture">
         <img [src]="film.image" alt="{{ film.title }}" />
       </div>
-      <div class="info">
+      <div class="info" *ngIf="!hide">
         <h2>{{ film.title }}</h2>
         <p class="description">{{ film.description }}</p>
         <p>IMDb Rating: {{ film.imdb_rating }}</p>

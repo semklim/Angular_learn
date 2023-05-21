@@ -2,4 +2,13 @@
   <app-add-film></app-add-film>
   <app-del-film></app-del-film>
 </div>
-<app-films-list></app-films-list>
+
+<div class="btnHide__wrap">
+  <div class="btnHide">
+    <input type="checkbox" #checkbox (click)="log(checkbox)" name="Hide" id="">
+    <span>Hide info</span>
+  </div>
+</div>
+<div class="listOfFilms">
+  <app-film [film]="film" [hide]="hide" *ngFor="let film of filmsData.films"></app-film>
+</div>

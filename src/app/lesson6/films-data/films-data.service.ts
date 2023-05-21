@@ -5,7 +5,7 @@ import { Film, FilmsResponse } from 'src/app/types/films/films.type';
   providedIn: 'root',
 })
 export class FilmsDataService {
-  dataBase: FilmsResponse = {
+  private dataBase: FilmsResponse = {
     films: [
       {
         id: 'f1a84b06f8f93f2b',
@@ -61,7 +61,6 @@ export class FilmsDataService {
 
   set add(obj: Film) {
     this.dataBase.films.push(obj);
-    console.log(this.dataBase.films);
   }
 
   remove(title: string) {

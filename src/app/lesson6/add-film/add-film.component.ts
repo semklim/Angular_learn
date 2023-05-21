@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { FilmsDataService } from '../films/films-data.service';
+import { FilmsDataService } from '../films-data/films-data.service';
+import { LogerService } from '../../logerService/loger.service';
 
 @Component({
   selector: 'app-add-film',
@@ -12,7 +13,11 @@ export class AddFilmComponent implements OnInit {
 
   URL_REGEXP = /^[A-Za-z][A-Za-z\d.+-]*:\/*(?:\w+(?::\w+)?@)?[^\s/]+(?::\d+)?(?:\/[\w#!:.?+=&%@\-/]*)?$/;
 
-  constructor(private formBuilder: FormBuilder, private filmsData: FilmsDataService) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private filmsData: FilmsDataService,
+    private logService: LogerService,
+  ) {}
 
   ngOnInit() {
     this.createForm();
@@ -49,7 +54,7 @@ export class AddFilmComponent implements OnInit {
       country: '',
     };
 
-    console.log(movieData);
+    this.logService.loger('добавлен фильм', movieData.title);
     this.filmsData.add = movieData;
     this.movieForm.reset();
   }

@@ -1,3 +1,32 @@
 .wrap {
+  margin-bottom: 20px;
+  width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.listOfFilms {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.listOfFilms > * {
+  scroll-snap-align: start;
+}
+
+.btnHide__wrap {
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+.btnHide > * {
+  margin: 0 5px;
 }

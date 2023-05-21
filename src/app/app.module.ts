@@ -24,6 +24,7 @@ import { AvatarSettingsComponent } from './lesson4/user/avatar-settings/avatar-s
 import { OpenedSocialsComponent } from './lesson5/opened-socials/opened-socials.component';
 import { SocialModule } from './lesson5/social/social.module';
 import { Lesson6Module } from './lesson6/lesson6.module';
+import { LogerService } from './logerService/loger.service';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { Lesson6Module } from './lesson6/lesson6.module';
     SocialModule,
     Lesson6Module,
   ],
-  providers: [],
+  providers: [LogerService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FilmsDataService } from '../films/films-data.service';
+import { FilmsDataService } from '../films-data/films-data.service';
 
 @Component({
   selector: 'app-films-section',
@@ -7,4 +7,12 @@ import { FilmsDataService } from '../films/films-data.service';
   styleUrls: ['./films-section.component.css'],
   providers: [FilmsDataService],
 })
-export class FilmsSectionComponent {}
+export class FilmsSectionComponent {
+  hide = false;
+
+  constructor(public filmsData: FilmsDataService) {}
+
+  log(el: HTMLInputElement) {
+    this.hide = el.checked;
+  }
+}
