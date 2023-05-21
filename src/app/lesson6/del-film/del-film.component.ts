@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FilmsDataService } from '../films/films-data.service';
 
 @Component({
   selector: 'app-del-film',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class DelFilmComponent implements OnInit {
   delForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private filmsData: FilmsDataService) {}
 
   ngOnInit() {
     this.createForm();
@@ -22,11 +23,10 @@ export class DelFilmComponent implements OnInit {
   }
 
   onSubmit() {
-    // if (this.delForm.invalid) {
-    //   return;
-    // }
-    // const delData = this.delForm.value;
-    // console.log(delData);
-    // this.delForm.reset();
+    if (this.delForm.invalid) {
+      return;
+    }
+    this.filmsData.remove(this.delForm.value.title);
+    this.delForm.reset();
   }
 }

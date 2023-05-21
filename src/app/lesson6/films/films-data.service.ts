@@ -64,7 +64,7 @@ export class FilmsDataService {
     console.log(this.dataBase.films);
   }
 
-  remove(id: string) {
-    this.dataBase.films.filter((el: Film) => el.id !== id);
+  remove(title: string) {
+    this.dataBase.films = this.dataBase.films.filter((el: Film) => el.title !== title);
   }
 }
