@@ -26,6 +26,7 @@ import { SocialModule } from './lesson5/social/social.module';
 import { Lesson6Module } from './lesson6/lesson6.module';
 import { LogerService } from './logerService/loger.service';
 import { Lesson7Component } from './lesson7/lesson7.component';
+import { ProdCardComponent } from './lesson7/prod-card/prod-card.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { Lesson7Component } from './lesson7/lesson7.component';
     // // lesson 4
     OpenedSocialsComponent,
     Lesson7Component,
+    ProdCardComponent,
   ],
   imports: [
     BrowserModule,

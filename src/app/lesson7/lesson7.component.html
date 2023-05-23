@@ -1,1 +1,8 @@
-<p>lesson7 works!</p>
+
+<div class="wrap">
+  <div class="productsCards">
+    <a routerLink="/products" *ngFor="let prod of products.getProducts()">
+      <img width="300" [attr.src]="prod.image" [alt]="prod.name" [title]="prod.name" [id]="prod.id" (click)="fireIdProduct(prod.id!)">
+    </a>
+  </div>
+</div>  

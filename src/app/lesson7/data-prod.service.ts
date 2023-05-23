@@ -52,7 +52,16 @@ export class DataProdService {
     return this.products;
   }
 
-  getProductById(id: number): Product | undefined {
-    return this.products.find(product => product.id === id);
+  getProductById(id: number): Product {
+    const item = this.products.find(product => product.id === id);
+    if (item) {
+      return item;
+    }
+    return {
+      image: '',
+      name: '',
+      price: 0.0,
+      description: '',
+    };
   }
 }
